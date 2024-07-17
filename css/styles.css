@@ -83,22 +83,28 @@ select {
     display: flex;
     align-items: center;
     /* gap: 3px; */
+    flex-wrap: wrap;
 }
 
 .search input {
     padding: 5px;
     flex: auto;
+    border-radius: 4px;
+    border: none;
 }
 
 .manageMantArea,
 .filter,
 .sort {
     flex: auto;
+    border-radius: 4px;
 }
 
 .buyDate input {
     padding: 4px;
     flex: 1;
+    border-radius: 4px;
+    border: none;
 }
 
 .bulkArea {
@@ -148,10 +154,12 @@ tr {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    transition: .4s;
 }
 
 tr:hover {
-    /* background-color:; */
+    background-color: azure;
+    color: black;
 }
 
 td,
