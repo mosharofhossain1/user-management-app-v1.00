@@ -8,22 +8,165 @@
     max-width: 800px;
     width: 100%;
     margin: 0px auto;
+    background-color: #ff6347b9;
+    padding: 15px;
 }
 
 .appHeader {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 800px;
+    width: 100%;
+    margin: 0px auto;
+    background-color: #F27BBD;
 }
 
 .appPorfile img {
-    width: 80px;
+    width: 70px;
     border-radius: 50%;
     height: auto;
 }
 
 .appHeader {
-    background-color: tomato;
+    background-color: #ff634794;
     padding: 15px;
     height: 80px;
+}
+
+.userTitle {
+    margin: 15px 0px;
+}
+
+.separator {
+    height: 2px;
+    background-color: white;
+    width: 100%;
+    margin: 10px 0px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: tomato; */
+    /* padding: 15px; */
+}
+
+form div {
+    margin: 10px 10px;
+}
+
+form label {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+form input,
+select {
+    padding: 7px 15px;
+    border: none;
+    border-radius: 4px;
+}
+
+#userBtn {
+    padding: 0px 35px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #77E4C8;
+    border: none;
+    border-radius: 4px;
+    color: #000;
+    cursor: pointer;
+}
+
+.manageMantArea {
+    display: flex;
+    align-items: center;
+    /* gap: 3px; */
+}
+
+.search input {
+    padding: 5px;
+    flex: auto;
+}
+
+.manageMantArea,
+.filter,
+.sort {
+    flex: auto;
+}
+
+.buyDate input {
+    padding: 4px;
+    flex: 1;
+}
+
+.bulkArea {
+    background-color: white;
+    padding: 5px 10px;
+    margin: 10px 0px;
+}
+
+.bulkArea #deleteBtn,
+#editBtn,
+#dismiss {
+    background-color: yellow;
+    padding: 7px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 8px;
+}
+
+.bulkArea #editBtn {
+    background-color: tomato;
+}
+
+.bulkArea #dismiss {
+    background-color: orange;
+}
+
+table {
+    margin: 10px 0px;
+}
+
+thead {
+    background-color: #f87f6ad7;
+    color: white;
+    padding: 5px;
+}
+
+table,
+thead,
+tbody,
+tr {
+    width: 100%;
+    display: block;
+}
+
+tr {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+tr:hover {
+    /* background-color:; */
+}
+
+td,
+th {
+    flex: 1;
+    text-align: center;
+}
+
+td button {
+    background-color: unset;
+    border: none;
+}
+
+button i {
+    pointer-events: none;
+    color: white;
+    font-size: 18px;
 }
