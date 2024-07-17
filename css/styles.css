@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    margin: 0px auto;
+}
+
+.appHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.appPorfile img {
+    width: 80px;
+    border-radius: 50%;
+    height: auto;
+}
+
+.appHeader {
+    background-color: tomato;
+    padding: 15px;
+    height: 80px;
+}
