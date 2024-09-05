@@ -16,8 +16,15 @@
         width: 100%;
     }
 
+    #userBtn {
+        padding: 5px 10px;
+        font-size: 16px;
+        margin: 0px 9px;
+    }
+
     table {
         margin: 10px 0px;
+        width: 100%;
     }
 
     thead {
@@ -39,10 +46,15 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
+        max-width: 100%;
     }
 
     tr:hover {
         background-color: yellow;
+    }
+
+    tr:hover button i {
+        color: black;
     }
 
     td,

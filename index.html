@@ -13,55 +13,57 @@
 </head>
 
 <body>
-    <!-- Header section -->
-    <div class="appHeader">
-        <div class="appLogo">
-            <h2>User Management</h2>
-        </div>
-        <div class="appPorfile">
-            <img src="profile.jpg" alt="">
-        </div>
-    </div>
 
-    <!-- Header section end -->
     <div class="container">
+        <!-- Header section -->
+        <div class="appHeader">
+            <div class="appLogo">
+                <h2>User Management</h2>
+            </div>
+            <div class="appPorfile">
+                <img src="profile.jpg" alt="">
+            </div>
+        </div>
+
+        <!-- Header section end -->
         <div class="appInnerContainer">
 
             <!-- User section start -->
             <h2 class="userTitle">Add New User</h2>
             <div class="separator"></div>
-            <form action="#">
+            <form action="#" id="form">
                 <!-- user name -->
                 <div class="userName">
                     <label for="firstName">First Name : </label>
-                    <input type="text" id="firstName" placeholder="Create a First Name">
+                    <input type="text" id="firstName" name="firstname" placeholder="Create  First Name" required>
                     <label for="lastName">Last Name : </label>
-                    <input type="text" id="lastName" placeholder="Create a Last Name">
+                    <input type="text" id="lastName" name="lastname" placeholder="Create  Last Name" required>
                 </div>
                 <!-- date  -->
                 <div class="date">
                     <label for="date"> Date Of Birth : </label>
-                    <input type="date" name="date" id="date">
+                    <input type="date" name="date" id="date" required>
                 </div>
                 <!-- gender -->
                 <div class="gender">
                     <label for="gender">Gender : </label>
-                    <select name="" id="gender">
-                        <option value=""></option>
+                    <select name="gender" id="gender" required>
+                        <option value="">Select Gender</option>
                         <option value="male">Male</option>
                         <option value="female">Female</option>
+                        <option value="other">Others</option>
                     </select>
                 </div>
                 <!-- address -->
                 <div class="address">
                     <label for="address">Address : </label>
-                    <input type="text" placeholder="Add Your Address">
+                    <input type="text" name="address" placeholder="Add Your Address" required>
                 </div>
                 <!-- Religiation -->
                 <div class="religion">
                     <label for="religion">Religion : </label>
-                    <select name="" id="religion">
-                        <option value=""></option>
+                    <select name="religion" id="religion" required>
+                        <option value="">Select Religion</option>
                         <option value="islam">Islam</option>
                         <option value="hindu">Hindu</option>
                         <option value="others">Others</option>
@@ -70,8 +72,8 @@
                 <!-- relation -->
                 <div class="relation">
                     <label for="relation">Relation : </label>
-                    <select name="" id="relation">
-                        <option value=""></option>
+                    <select name="relation" id="relation" required>
+                        <option value="">Select Relation Status</option>
                         <option value="single">Single</option>
                         <option value="marid">Marid</option>
                     </select>
@@ -79,16 +81,16 @@
                 <!-- email -->
                 <div class="email">
                     <label for="email">Email : </label>
-                    <input type="email" name="" id="email">
+                    <input type="email" name="email" id="email" required placeholder="Enter Your Valid Email">
                 </div>
 
                 <!-- phone -->
                 <div class="phone">
                     <label for="phone">Phone Number : </label>
-                    <input type="number" name="" id="phone">
+                    <input type="number" name="phone" id="phone" required placeholder="Enter Your Valid Phone Number">
                 </div>
                 <!-- add user Button -->
-                <button id="userBtn">Add User</button>
+                <button id="adduserBtn" value="Add User">Add User </button>
             </form>
 
             <!-- user management area start -->
@@ -98,13 +100,13 @@
                 <!-- search -->
                 <div class="search">
                     <label for="search">Search : </label>
-                    <input type="text" id="search" placeholder="Search User">
+                    <input type="text" id="search" placeholder="Search User" required>
                 </div>
                 <!-- filter -->
                 <div class="filter">
                     <label for="filter">Filter : </label>
-                    <select name="filter" id="filter">
-                        <option value="all">All</option>
+                    <select name="filter" id="filter" required>
+                        <option value="all">Filter User</option>
                         <option value="all">Register User</option>
                         <option value="all">NonRegister User</option>
                     </select>
@@ -112,7 +114,7 @@
                 <!-- sort -->
                 <div class="sort">
                     <label for="sort">Sort : </label>
-                    <select name="" id="filter">
+                    <select name="" id="filter" required>
                         <option value="old">Old</option>
                         <option value="new">Newest</option>
                     </select>
@@ -120,7 +122,7 @@
                 <!-- date -->
                 <div class="buyDate">
                     <label for="date">By Date : </label>
-                    <input type="date">
+                    <input type="date" required>
                 </div>
 
             </div>
@@ -137,20 +139,25 @@
             <table>
                 <thead>
                     <tr>
-                        <!-- <th>
+                        <th>
                             <label for="checkbox">All</label>
                             <input type="checkbox" name="checkbox" id="checkbox">
-                        </th> -->
+                        </th>
                         <th>NO.</th>
-                        <th>Task Name</th>
-                        <th> Priority</th>
-                        <th>Status</th>
-                        <th>Date</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th> Date of Birth</th>
+                        <th>Gender</th>
+                        <th>Religion</th>
+                        <th>Relation</th>
+                        <th>Address</th>
+                        <th>Email</th>
+                        <th>Phone</th>
                         <th>Action</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
+                <tbody id="tbody">
+                    <!-- <tr>
                         <td>1</td>
                         <td>Gaming</td>
                         <td>Heigh</td>
@@ -185,7 +192,7 @@
                                 <i class="fas fa-trash"></i>
                             </button>
                         </td>
-                    </tr>
+                    </tr> -->
                 </tbody>
             </table>
         </div>
